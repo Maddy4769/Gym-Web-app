@@ -7,7 +7,10 @@
   <link rel="stylesheet" href="register.css">
   </head>
 <body>
-  
+  <video autoplay muted loop>
+  <source src="https://videos.pexels.com/video-files/9669050/9669050-hd_1920_1080_25fps.mp4" type="video/mp4">
+  Your browser does not support the video tag.
+</video>
   <div class="registration-container"> <form action="process_registration.jsp" method="post">
       <h1>Registration Form</h1>
       <div class="form-group">
