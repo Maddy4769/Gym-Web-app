@@ -7,11 +7,13 @@
 <title>Fitness App</title>
 <style>
 body {
-  background-image: url("https://images.pexels.com/photos/289586/pexels-photo-289586.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"); /* Background image */
+  background-image: url("https://images.pexels.com/photos/7031706/pexels-photo-7031706.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"); /* Background image */
   margin: 0;
   padding: 0;
   font-family: sans-serif;
-  height: 100vh; /* Ensures full height for the body */
+  background-size: cover;
+  
+   /* Ensures full height for the body */
 }
 
 h1 {
@@ -63,10 +65,14 @@ h1 {
   display: inline-block;
   margin: 1px;
   text-align: center;
-  background-color: rgba(166,219,255, 0.5); /* Semi-transparent white background */
-  border-radius: 5px; /* Rounded corners */
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow */
-  transition: all 0.3s ease-in-out; /* Smooth hover effects */;
+  background: rgba(56,51,51,0.17); /* Semi-transparent white background */
+  border-radius: 16px; /* Rounded corners */
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  transition: all 0.3s ease-in-out; /* Smooth hover effects */
+  backdrop-filter:blur(2.4px);
+  -webkit-backdrop-filter:blur(2.4px);
+  border:1px solid rgba(56,51,51,0.14);
+  
 }
 
 .card:hover  {
@@ -91,6 +97,7 @@ h1 {
 
 .card p {
   padding: 0 10px;
+  color:#ffffff;
 }
 
 
@@ -153,7 +160,7 @@ nav {
   /*display: flex; /* Arrange elements horizontally */
   justify-content: space-between; /* Distribute links evenly */
   align-items: center; /* Vertically center elements */
-  padding: 5px 20px; /* Add some padding */
+  padding: 10px 20px; /* Add some padding */
   background-color: #bef2f1; /* Dark background color */
   color: #fff; /* Light text color */
   justify-content: space-between; /* Distribute links and search evenly */
@@ -164,6 +171,15 @@ nav {
   width: 100%; /* Make it span the entire width */
   z-index: 10; /* Ensure it stays on top of other elements */
   transition: background-color 0.3s ease-in-out;
+  background: rgba(19,18,18,0.31); /* Semi-transparent white background */
+  border-radius: 16px; /* Rounded corners */
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  transition: all 0.3s ease-in-out; /* Smooth hover effects */
+  backdrop-filter:blur(2px);
+  -webkit-backdrop-filter:blur(2px);
+  border:1px solid rgba(19,18,18,0.14);
+  
+
 }
 
 .logo {
@@ -249,6 +265,12 @@ font-size: 20px; /* Adjust font size for brand name */
   font-size:24px;
   position:center;
   }
+  
+  .card {
+  position: relative; /* Enable positioning of pseudo-element */
+}
+
+
 </style>
 </head>
 <body>
@@ -358,4 +380,3 @@ font-size: 20px; /* Adjust font size for brand name */
     </div>
  </body>
  </html>   
-  

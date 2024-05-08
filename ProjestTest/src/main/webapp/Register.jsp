@@ -33,11 +33,29 @@
         <input type="date" id="dob" name="dob" required>
       </div>
       <div class="form-group">
-        <label for="planType">Plan Type:</label>
+        <label for="planType">Workout Type:</label>
         <select id="planType" name="planType" required>
           <option value="">-- Select a Plan --</option>
           <option value="basic">Basic Plan</option>
           <option value="premium">Premium Plan</option>
+          <option value="pro">Pro Plan</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label for="planType">Nutrition Plan</label>
+        <select id="planType" name="planType" required>
+          <option value="">-- Select a Plan --</option>
+          <option value="loss">Weight Loss</option>
+          <option value="gain">Weight gain</option>
+          <option value="energy">Energy Diet</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label for="planType">Yoga Plan </label>
+        <select id="planType" name="planType" required>
+          <option value="">-- Select a Plan --</option>
+          <option value="standard">Basic Plan</option>
+          <option value="prime">Premium Plan</option>
           <option value="pro">Pro Plan</option>
         </select>
       </div>
