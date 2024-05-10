@@ -7,6 +7,7 @@
  </head>
 
 <body>
+
 <video autoplay muted loop>
   <source src="https://videos.pexels.com/video-files/2480792/2480792-hd_1920_1080_24fps.mp4" type="video/mp4">
   Your browser does not support the video tag.

@@ -1,0 +1,120 @@
+@charset "UTF-8";
+/* Reset Styles (Optional) */
+/* Consider using a CSS reset stylesheet to normalize browser defaults */
+
+/* Global Styles */
+body {
+  font-family: Arial, sans-serif; /* Specify a fallback font */
+  margin: 0;
+  padding: 0;
+  color: #333; /* Set a default text color */
+}
+
+/* Container Styles */
+.container {
+  width: 80%; /* Adjust width as needed */
+  max-width: 1000px; /* Set a maximum width for larger screens */
+  margin: 0 auto;
+  padding: 2rem;
+  border-radius: 10px;
+  background-color: #f5f5f5;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle box shadow */
+}
+
+/* Header Styles */
+header {
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+h1 {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+  color: #663300; /* Brown color for heading */
+}
+
+/* Navigation Styles */
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center; /* Vertically align navigation items */
+  margin-bottom: 1rem;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+nav li {
+  display: inline-block;
+  margin-right: 1rem;
+}
+
+nav a {
+  text-decoration: none;
+  color: inherit; /* Inherit text color from body */
+  font-weight: bold;
+  transition: color 0.3s ease-in-out;
+}
+
+nav a:hover {
+  color: #663300; /* Brown color on hover */
+}
+
+/* Main Content Styles */
+main {
+  display: grid;
+  grid-template-columns: 1fr 1fr; /* Two equal columns for content sections */
+  grid-gap: 1rem; /* Space between content sections */
+  padding: 1rem;
+}
+
+.profile-info,
+.buttons {
+  background-color: #fff;
+  border-radius: 5px;
+  padding: 1rem;
+}
+
+.profile-info img {
+  display: block;
+  margin: 0 auto;
+  border-radius: 50%;
+  width: 150px;
+  height: 150px;
+  object-fit: cover; /* Crop image to fit container */
+}
+
+.profile-info p {
+  margin-bottom: 0.5rem;
+  line-height: 1.5; /* Improve readability with line spacing */
+}
+
+/* Button Styles */
+.buttons button {
+  display: block;
+  width: 100%;
+  padding: 1rem;
+  margin-bottom: 0.5rem;
+  border: none;
+  border-radius: 5px;
+  background-color: #663300;
+  color: #fff;
+  font-size: 16px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+.buttons button:hover {
+  background-color: #996633;
+}
+
+/* Responsiveness (Optional) */
+@media (max-width: 768px) {
+  /* Adjust styles for smaller screens (e.g., stack content sections) */
+  main {
+    grid-template-columns: 1fr;  /* Single column layout for mobile */
+  }
+}

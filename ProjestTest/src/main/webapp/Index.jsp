@@ -160,15 +160,16 @@ nav {
   /*display: flex; /* Arrange elements horizontally */
   justify-content: space-between; /* Distribute links evenly */
   align-items: center; /* Vertically center elements */
-  padding: 10px 20px; /* Add some padding */
+  padding: 5px 10px; /* Add some padding */
   background-color: #bef2f1; /* Dark background color */
   color: #fff; /* Light text color */
   justify-content: space-between; /* Distribute links and search evenly */
   opacity:1;
-  position: fixed; /* Fix the navigation bar to the top */
+  position:fixde; /* Fix the navigation bar to the top */
   top: 0; /* Position it at the top of the viewport */
-  left: 0; /* Position it at the left of the viewport */
-  width: 100%; /* Make it span the entire width */
+  margin-left: auto; /* Position it at the left of the viewport */
+  margin-right:auto;
+  width: 85%; /* Make it span the entire width */
   z-index: 10; /* Ensure it stays on top of other elements */
   transition: background-color 0.3s ease-in-out;
   background: rgba(19,18,18,0.31); /* Semi-transparent white background */
@@ -277,7 +278,7 @@ font-size: 20px; /* Adjust font size for brand name */
 <nav>
   <ul class="nav-list">
   <li><a href="Index.jsp">Home</a></li>
-  <li><a href="#">Features</a></li>
+  <li><a href="Dashboard.jsp">Dashboard</a></li>
   <li><a href="#">Pricing</a></li>
   <li><a href="#">Blog</a></li>
   <li><a href="#">Contact</a></li>

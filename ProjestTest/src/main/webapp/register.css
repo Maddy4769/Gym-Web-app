@@ -64,7 +64,7 @@ body {
 /* Form Label */
 .form-group label {
   display: block; /* Remove default block-level behavior for inline display */
-  margin-bottom: 5px;
+  margin-bottom: 3px;
   font-weight: bold;
   color: #dddddd; /* Dark text color for labels */
   width: auto; /* Labels adjust to content */
@@ -78,14 +78,14 @@ body {
 .form-group input[type="tel"],
 .form-group input[type="date"] {
   width: 90%; /* Inputs take full width within the form group */
-  padding: 9px;
+  padding: 5px;
   border: 1px solid #ccc;
-  border-radius: 4px;
+  border-radius: 3px;
   box-sizing: border-box; /* Include border width in width calculation */
   background-color: #fff; /* White background color for inputs */
   color: #333; /* Dark text color for inputs */
   /* Optional styles for input styling */
-  font-size: 16px; /* Adjust input font size */
+  font-size: 12px; /* Adjust input font size */
 }
 
 /* Input Focus Styling */
