@@ -16,18 +16,27 @@
       <li><a href="#">Edit Profile</a></li>
     </ul>
   </nav>
-
-  <main>  <div class="profile-info">
-      <img src="${user.profileImage}" alt="Profile Picture" width="150" height="150">  <p>Username: ${user.username}</p>
+    <main>  <div class="profile-info">
+     	 <p>Username: ${user.username}</p>
       <p>Phone Number: ${user.phoneNumber}</p>
       <p>Date of Birth: ${user.dateOfBirth}</p>  </div>
     
     <div class="buttons">
-      <button>Log Workout Entry</button>  <button>Show All Past Entries</button>
-    </div>
+  <button id="logWorkout">Log Workout Entry</button>
+  <button id="showAllEntries">Show All Past Entries</button>
+</div>
   </main>
 
 </div>
 
 </body>
+<script>
+document.getElementById("logWorkout").addEventListener("click", function() {
+  window.location.href = "EntryLog.jsp";
+});
+
+document.getElementById("showAllEntries").addEventListener("click", function() {
+  window.location.href = "ViewHistory.jsp";
+});
+</script>
 </html>

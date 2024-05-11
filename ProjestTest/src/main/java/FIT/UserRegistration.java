@@ -18,11 +18,7 @@ import jakarta.servlet.http.HttpServletResponse;
 public class UserRegistration extends HttpServlet {
     private static final long serialVersionUID = 1L;
 
-    // Replace these with your actual database connection details
-    private String jdbcURL = "jdbc:mysql://localhost:3306/project";
-    private String username = "MaddyXVI";
-    private String password = "Mohammad@786";
-
+   
     /**
      * @see HttpServlet#HttpServlet()
      */
@@ -52,12 +48,12 @@ public class UserRegistration extends HttpServlet {
         try {
             // Replace with your MySQL JDBC Driver
             Class.forName("com.mysql.jdbc.Driver"); 
-            connection = DriverManager.getConnection(jdbcURL, username, password);
+            connection = DriverManager.getConnection("jdbc:mysql://localhost:3306/project","root","");
 
             // Prepare the SQL statement with placeholders
             String sql = "INSERT INTO userregistration (full_name, username, email, password, phone_number, dob, workout_plan, nutrition_plan, yoga_plan) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)";
             preparedStatement = connection.prepareStatement(sql);
-            preparedStatement.setString(1, firstName + " " + lastName); // Combine first and last name
+            preparedStatement.setString(1, firstName); // Combine first and last name
             preparedStatement.setString(2, lastName); // Assuming username is same as last name (modify if needed)
             preparedStatement.setString(3, email);
 
