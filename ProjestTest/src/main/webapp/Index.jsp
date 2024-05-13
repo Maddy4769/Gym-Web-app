@@ -121,10 +121,10 @@ h1 {
   padding: 20px; /* Add some padding for spacing */
 }
 
-button { /* General button styles */
-  background: linear-gradient(to bottom, #777696 0%, #738276 100%); /* Green gradient */
-  border: 1px solid #3e8e41; /* Green border */
-  color: white;
+/*button { /* General button styles */
+  /*background: linear-gradient(to bottom, #777696 0%, #738276 100%); /* Green gradient */
+  /*border: 1px solid #3e8e41; /* Green border */
+  /*color: white;
   padding: 15px 32px;
   text-align: center;
   text-decoration: none;
@@ -132,16 +132,87 @@ button { /* General button styles */
   font-size: 16px;
   margin: 4px 2px;
   cursor: pointer; /* Indicates interactive element */
-  border-radius: 5px; /* Rounded corners for a polished look */
-  transition: all 0.3s ease-in-out; /* Smooth hover effects */
-}
+  /*border-radius: 5px; /* Rounded corners for a polished look */
+  /*transition: all 0.3s ease-in-out; /* Smooth hover effects */
+/*}
 
 button:hover { /* Button hover effect */
-  background: linear-gradient(to bottom, #333333 0%, #004444 100%); /* Change gradient color on hover */
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Subtle shadow on hover */
+  /*background: linear-gradient(to bottom, #333333 0%, #004444 100%); /* Change gradient color on hover */
+  /*box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Subtle shadow on hover */
+/*}*/
+
+
+/* CSS */
+.button-86 {
+  all: unset;
+  width: 100px;
+  height: 30px;
+  font-size: 16px;
+  background: transparent;
+  border: none;
+  position: relative;
+  color: #f0f0f0;
+  cursor: pointer;
+  z-index: 1;
+  padding: 10px 20px;	
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  white-space: nowrap;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  margin-rights: 10px; /* Add spacing between buttons */
 }
 
+.button-86::after,
+.button-86::before {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  z-index: -99999;
+  transition: all .4s;
+}
 
+.button-86::before {
+  transform: translate(0%, 0%);
+  width: 100%;
+  height: 100%;
+  background: #28282d;
+  border-radius: 10px;
+}
+
+.button-86::after {
+  transform: translate(10px, 10px);
+  width: 35px;
+  height: 35px;
+  background: #ffffff15;
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  border-radius: 50px;
+}
+
+.button-86:hover::before {
+  transform: translate(5%, 20%);
+  width: 110%;
+  height: 110%;
+}
+
+.button-86:hover::after {
+  border-radius: 10px;
+  transform: translate(0, 0);
+  width: 100%;
+  height: 100%;
+}
+
+.button-86:active::after {
+  transition: 0s;
+  transform: translate(0, 5%);
+}
+.button-container {
+  justify-content: space-between; /* Distribute buttons evenly */
+}
 
 .card {
   display: block; /* Change to block for vertical stacking */
@@ -226,6 +297,9 @@ nav {
 /*.nav-list li p {
 		position:center;
 }*/
+.nav-links a:hover::after {
+  transform: scaleX(1); /* Expand underline on hover */
+}
 
 .search-container {
   margin-left: auto;
@@ -354,29 +428,26 @@ font-size: 20px; /* Adjust font size for brand name */
         </p>
       </div>
   </div>
-  
-  <div class="my-form">
+  <!-- HTML !-->
+
+
+
+  <div class=" button-container" style="display: flex">
       <!-- Buttons to go to different pages -->
-      <form action="workouts.jsp" method="get">
-        <button type="submit">Price</button>
+      <form action="Shop.jsp" method="get">
+        <button class="button-86" role="button">Shop</button>
       </form>
-      <form action="nutrition.jsp" method="get">
-        <button type="submit">Gym Plans</button>
-      </form>
-      <form action="goals.jsp" method="get">
-        <button type="submit">Enroll</button>
+      <form action="Register.jsp" method="get">
+        <button class="button-86" role="button">Enroll</button>
       </form>
         <form action="goals.jsp" method="get">
-        <button type="submit">Feedback</button>
+      <button class="button-86" role="button">Feedback</button>
       </form>
         <form action="goals.jsp" method="get">
-        <button type="submit">Services</button>
+       <button class="button-86" role="button">Services</button>
       </form>
         <form action="goals.jsp" method="get">
-        <button type="submit">Register</button>
-      </form>
-        <form action="goals.jsp" method="get">
-        <button type="submit">FAQ</button>
+        <button class="button-86" role="button">FAQ</button>
       </form>
     </div>
  </body>

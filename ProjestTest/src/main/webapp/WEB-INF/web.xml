@@ -29,4 +29,14 @@
     <servlet-name>insertEntry</servlet-name>
     <url-pattern>/insertEntry</url-pattern>
   </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>loginCon</display-name>
+    <servlet-name>loginCon</servlet-name>
+    <servlet-class>FIT.loginCon</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>loginCon</servlet-name>
+    <url-pattern>/loginCon</url-pattern>
+  </servlet-mapping>
 </web-app>
