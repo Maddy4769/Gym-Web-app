@@ -1,0 +1,124 @@
+@charset "UTF-8";
+
+/* Body Styles */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  /*background-color: #9d818b; /* Light background color */
+}
+
+/* Registration Container */
+.registration-container {
+  display: grid; /* Use grid layout for positioning */
+  grid-template-rows: auto 1fr; /* Allocate space for header and form */
+  grid-template-columns: 1fr; /* Single column for form */
+  padding: 17px;
+  /*margin: 18px auto; /* Add margin for better centering */
+ /* width: 90%; /* Set a maximum width */
+  background-color: ""; /* White background */
+  border-radius: 10px; /* Rounded corners */
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2); /* Shadow effect */
+  transition: all 0.3s ease-in-out; /* Smooth hover effects */;
+  color:#FFFFFF;
+   max-width: 700px; /* Adjust the value as needed (e.g., 80% for viewport %) */
+  margin: 0 auto; /* Center the container horizontally */
+  background: rgba(56,51,51,0.17); /* Semi-transparent white background */
+  border-radius: 16px; /* Rounded corners */
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  transition: all 0.3s ease-in-out; /* Smooth hover effects */
+  backdrop-filter:blur(2.4px);
+  -webkit-backdrop-filter:blur(2.4px);
+  border:1px solid rgba(56,51,51,0.14);
+}
+
+/* Registration Header (Optional) */
+.registration-container header {
+  /* Inherited styles from .registration-container */
+  text-align: center; /* Center text within header */
+  padding: 15px;
+  border-bottom: 1px solid #ddd; /* Add a subtle divider line */
+}
+
+.registration-container header h1 {
+  font-size: 2.5rem; /* Adjust heading size as needed */
+  margin-bottom: 1rem;
+  color: #333; /* Dark text color */
+}
+
+/* Registration Form */
+.registration-container form {
+  /* Inherited styles from .registration-container */
+  display: flex; /* Arrange form elements in a single row (optional) */
+  flex-direction: column; /* Stack form elements vertically */
+  width: 100%; /* Form takes full width of container */
+}
+
+/* Form Group */
+.form-group {
+  margin-bottom: 1.2rem;
+  display: flex; /* Arrange label and input in a single line */
+  align-items: center; /* Align label and input vertically */
+  width: 90%; /* Labels take full width within the form group */
+}
+
+/* Form Label */
+.form-group label {
+  display: block; /* Remove default block-level behavior for inline display */
+  margin-bottom: 3px;
+  font-weight: bold;
+  color: #dddddd; /* Dark text color for labels */
+  width: auto; /* Labels adjust to content */
+  /* Optional styles for label styling */
+  padding-right: 10px; /* Add space between label and input */
+}
+
+/* Form Inputs */
+.form-group input[type="text"],
+.form-group input[type="email"],
+.form-group input[type="tel"],
+.form-group input[type="date"] {
+  width: 90%; /* Inputs take full width within the form group */
+  padding: 5px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  box-sizing: border-box; /* Include border width in width calculation */
+  background-color: #fff; /* White background color for inputs */
+  color: #333; /* Dark text color for inputs */
+  /* Optional styles for input styling */
+  font-size: 12px; /* Adjust input font size */
+}
+
+/* Input Focus Styling */
+.form-group input[type="text"]:focus,
+.form-group input[type="email"]:focus,
+.form-group input[type="tel"]:focus,
+.form-group input[type="date"]:focus {
+  border-color: #3399ff; /* Blue border on focus */
+  outline: none; /* Remove default outline */
+  font-color:#dddddd;
+}
+
+/* Submit Button (Optional) */
+.submit-button {
+  display: inline-block;
+  width: 100%; /* Button takes full width */
+  padding: 10rem 20rem;
+  margin-top: 1.5rem;
+  border: none;
+  border-radius: 5px;
+  background-color: #3399ff; /* Blue background color */
+  color: #fff; /* White text color */
+  font-size: 16px;
+  cursor: pointer; /* Indicate*/
+  transition: all 0.3s ease-in-out;
+}
+video {
+  position: fixed;
+  object-fit: cover; /* Stretch video to fill container */
+  width: 100%;
+  height: 100vh; /* Cover entire viewport height */
+  top: 0;
+  left: 0;
+  z-index: -1; /* Place video behind other content */
+}
