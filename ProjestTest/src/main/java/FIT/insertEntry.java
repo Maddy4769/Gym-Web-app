@@ -11,7 +11,7 @@ import java.sql.*;
 /**
  * Servlet implementation class insertEntry
  */
-public class insertEntry extends HttpServlet {
+public class insertEntry extends fit.HttpServlet {
 	private static final long serialVersionUID = 1L;
 
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {

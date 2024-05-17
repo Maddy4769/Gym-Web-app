@@ -30,13 +30,4 @@
 </div>
 
 </body>
-<script>
-document.getElementById("logWorkout").addEventListener("click", function() {
-  window.location.href = "EntryLog.jsp";
-});
-
-document.getElementById("showAllEntries").addEventListener("click", function() {
-  window.location.href = "ViewHistory.jsp";
-});
-</script>
 </html>
