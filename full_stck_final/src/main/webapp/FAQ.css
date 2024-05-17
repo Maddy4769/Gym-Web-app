@@ -1,0 +1,89 @@
+@charset "UTF-8";
+/* General styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    background-color: #f5f5f5; /* Light gray background */
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333; /* Dark gray text */
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2); /* Subtle text shadow */
+}
+
+/* Container styles */
+.container {
+    width: 80%;
+    margin: 0 auto;
+    border-radius: 5px;
+    background-color: #fff;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+/* FAQ list styles */
+.faq-list {
+    margin: 20px 0;
+}
+
+.faq-item {
+    margin-bottom: 15px;
+    position: relative; /* Required for some effects */
+    transition: all 0.3s ease; /* Transition all properties for smooth animation */
+}
+
+.faq-item:hover {
+    transform: translateY(-3px); /* Slight hover lift effect */
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2); /* Subtle hover shadow */
+}
+
+.faq-question {
+    font-weight: bold;
+    color: #333;
+    padding: 15px 20px;
+    display: flex;
+    justify-content: space-between; /* Align question and icon */
+    align-items: center;
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+.faq-question:hover {
+    color: #007bff; /* Blue on hover */
+}
+
+.faq-answer {
+    padding: 15px 20px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease;
+}
+
+.faq-answer.visible {
+    max-height: 100px; /* Adjust for content height */
+}
+
+/* Accordion effect with border animation (optional) */
+.faq-item.active .faq-question {
+    border-bottom: 3px solid #007bff; /* Blue border on active */
+    animation: borderAnim 0.3s ease forwards; /* Add border animation */
+}
+
+@keyframes borderAnim {
+    from { border-width: 0; }
+    to { border-width: 3px; }
+}
+
+/* Plus/Minus icon animation (optional) */
+.faq-question::after {
+    content: "\002B"; /* Plus symbol */
+    font-size: 16px;
+    color: #333;
+    transition: transform 0.3s ease;
+}
+
+.faq-item.active .faq-question::after {
+    content: "\u2212"; /* Minus symbol */
+    transform: rotate(180deg); /* Rotate icon on active */
+}

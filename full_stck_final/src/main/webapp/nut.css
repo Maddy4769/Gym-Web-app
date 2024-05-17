@@ -1,0 +1,131 @@
+@charset "UTF-8";
+body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  background-image: url("https://images.pexels.com/photos/1640777/pexels-photo-1640777.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"); /* Replace with your background image path */
+  background-size: cover; /* Stretch image to fill container */
+  background-attachment: fixed; /* Keep background image in place while scrolling */
+  background-position: center; /* Center image horizontally and vertically */
+  min-height: 100vh; /* Ensure full viewport height */
+  background-color: #f0f0f0; /* Light background color */
+  box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.1);
+}
+
+.container {
+  display: grid;
+  grid-template-rows: auto 1fr auto; /* Adjust as needed */
+  color: #333;
+  position: relative;
+  /* Additional styles for a shadow box effect */
+  margin: 20px auto; /* Add margin for better centering */
+  max-width: 1000px; /* Set a maximum width */
+  background-color: #; /* White background */
+  box-shadow:0 0 20px rgba(0, 0, 0, 0.9); /* Shadow around the container */
+  border-radius:5px; /* Rounded corners */
+}
+
+
+.main {
+  padding: 20px;
+}
+
+.meal-plans {
+  display: flex;
+  flex-wrap: wrap; /* Allow cards to wrap on smaller screens */
+  justify-content: space-around; /* Distribute cards evenly */
+  margin: 0 auto; /* Center content horizontally within the main section */
+  /* Optional height for consistent plan card area: */
+  height: 400px; /* Adjust as needed */
+  transition: all 0.3s ease-in-out; 
+  
+}
+
+.plan-card {
+  width: 300px; /* Adjust width as needed */
+  background-color: #fff; /* White card background */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Shadow effect */
+  border-radius: 5px; /* Rounded corners */
+  margin: 1px;
+  transition: all 0.3s ease-in-out;
+  position: relative; /* Enables image background positioning */
+  overflow: hidden; /* Ensures image doesn't overflow the card */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Adjust shadow as needed */
+  transform: scale(0.9);
+}
+
+.plan-card img {
+  width: 100%; /* Stretch image to fill card (background) */
+  height: 100%; /* Maintain aspect ratio */
+  object-fit: cover; /* Cover the entire card area */
+  position: absolute; /* Layers image behind content */
+  top: 0;
+  left: 0;
+  opacity: 1; /* Set image opacity for better text visibility */
+  box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1); /* Shadow for depth */
+  
+}
+
+.plan-card:hover .plan-card img {
+  opacity: 1; /* Increase opacity on hover for a subtle highlight */
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2); /* Increase shadow on hover */
+  transform: scale(0.9);
+}
+
+.plan-card .plan-card-content {
+  padding: 20px; /* Padding for content within the card */
+  color: #333; /* Dark text color */
+  text-align: center; /* Center text within the card */
+}
+
+/* Hover effect with vibrant background (optional): */
+.plan-card:hover .plan-card-content {
+  background-color: rgba(255, 165, 0, 0.8); /* Vibrant orange overlay on hover */
+  color: #fff; /* White text for better contrast on hover */
+}
+
+/* Adjust header and main content positioning if needed: */
+header,
+.main {
+  z-index: 1; /* Ensure content appears on top of the overlay (optional) */
+
+  
+}
+.plan-card p {
+  position: absolute; /* Enables absolute positioning */
+  bottom: 10px; /* Adjust vertical position from the bottom */
+  left: 10px;  /* Adjust horizontal position from the left */
+  margin: 0;  /* Remove default margin */
+  padding: 5px 10px; /* Add padding for content */
+  background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent background (optional) */
+  color: #fff; /* White text color */
+}
+header {
+  display: flex; /* Maintain flexbox for alignment */
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  background-color: #E0E7EA;
+  opacity:1; /* Adjust opacity as needed */
+  border-radius: 5px;
+}
+.nutrients {
+  background-color: #E0E7EA;
+  padding: 20px;
+  border-radius: 5px;
+  margin-top: 20px;
+  justify-content: center;
+  
+}
+.choose {
+  text-align: center; /* Center text alignment */
+  font-style: italic; /* Italic font style */
+  color: #333; /* Dark text color (adjustable) */
+  /* Additional styles for a nice look */
+  font-weight: bold; /* Bold font weight */
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2); /* Subtle text shadow */
+  /* Optional styles for further enhancement */
+  /* border-bottom: 1px dotted #ccc;  */  /* Add an underline (uncomment to use) */
+  /* padding: 5px 10px;  */             /* Add some padding (uncomment to use) */
+}
